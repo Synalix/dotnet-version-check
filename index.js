@@ -7,7 +7,7 @@ function getInput(name) {
     console.error(`::error::Missing required input: ${name}`);
     process.exit(1);
   }
-  return val.trim();
+  return val.trim().replace(/^['"]|['"]$/g, '');
 }
 
 function setFailed(message) {
