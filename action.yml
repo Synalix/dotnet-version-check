@@ -1,0 +1,12 @@
+name: '.NET Version Check'
+description: 'Verifies that the InformationalVersion in a .csproj file matches the GitHub Release tag.'
+author: 'Synalix'
+
+inputs:
+  csproj-path:
+    description: 'Path to the .csproj file (e.g. src/MyApp/MyApp.csproj)'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'index.js'

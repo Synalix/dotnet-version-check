@@ -1,0 +1,11 @@
+{
+  "name": "dotnet-version-check",
+  "version": "1.0.0",
+  "description": "GitHub Action to verify .NET InformationalVersion matches the release tag",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Synalix",
+  "license": "MIT"
+}
