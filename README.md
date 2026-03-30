@@ -18,11 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Check .NET version matches release tag
         uses: Synalix/dotnet-version-check@v1
         with:
-          csproj-path: 'ReWindows/ReWindows.csproj'
+          csproj-path: 'src/MyApp/MyApp.csproj'
 ```
 
 ## Inputs
