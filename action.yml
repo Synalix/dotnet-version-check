@@ -3,7 +3,7 @@ description: 'Verifies that the InformationalVersion in a .csproj file matches t
 author: 'Synalix'
 
 inputs:
-  csproj-path:
+  csproj_path:
     description: 'Path to the .csproj file (e.g. src/MyApp/MyApp.csproj)'
     required: true
 
@@ -12,5 +12,5 @@ branding:
   color: 'purple'
 
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'index.js'

@@ -27,7 +27,7 @@ Object.keys(process.env)
   .filter(k => k.startsWith('INPUT_'))
   .forEach(k => console.log(`  ${k}="${process.env[k]}"`));
 
-const csprojPath = getInput('csproj-path');
+const csprojPath = getInput('csproj_path');
 
 const githubRef = process.env.GITHUB_REF || '';
 const tagMatch = githubRef.match(/^refs\/tags\/(.+)$/);
